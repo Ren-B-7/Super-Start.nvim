@@ -17,6 +17,6 @@ Paste this as well
 You can remove the files ~/.local/share/font/nerd-font but keep NerdFonts
 This is an extended font format for extra images and icons added to nvim
 
-Then finally go to ~/.config/ and paste the "nvim.zip" file here and do command "unzip ~/.local/nvim.zip"
+Then finally go to ~/.config/ and paste the "nvim.zip" file here and do command "unzip ~/.local/nvim.zip", or alternatively extract elsewhere and pastethe nvim file here
 
 Then run nvim in your terminal, and all should be well
