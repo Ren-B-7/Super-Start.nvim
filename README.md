@@ -15,7 +15,7 @@ Secondly do the same for sudo_me_later.txt
 Paste this as well
 
 You can remove the files ~/.local/share/font/nerd-font but keep NerdFonts
-This is an extended font fornmat for extra images and icons added to nvim
+This is an extended font format for extra images and icons added to nvim
 
 Then finally go to ~/.config/ and paste the "nvim.zip" file here and do command "unzip ~/.local/nvim.zip"
 
