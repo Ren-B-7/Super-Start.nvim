@@ -22,7 +22,7 @@ This is an extended font format for extra images and icons added to nvim
 
 # Finally nvim
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
-Or alternatively only paste the extensions you plan on using within the default nvim lua folders
+, or alternatively only paste the extensions you plan on using within the default nvim lua folders
 
 # Done?
 Then run nvim in your terminal, and all should be well, if not contact owner, cause you fucked up
