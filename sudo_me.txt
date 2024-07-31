@@ -1,5 +1,4 @@
 sudo apt update -y
 sudo apt dist-upgrade -y
-sudo apt upgrade -y
 sudo apt install apt-transport-https automake autoconf curl openssh-client git gcc cpp gdb g++ CMake tmux openjdk-17-jre default-jre jdtls maven python3 python-is-python3 python3.12-venv lua5.4 luarocks bash ripgrep npm  diffutils grep zip rustup nvim
-rustup component add rust-analyzer
+sudo apt upgrade -y
