@@ -18,8 +18,6 @@ This also updates the apt list, and updates all packages before hand
 # Text file 2 (sudo_me_later)
 Secondly do the same for "sudo_me_later.txt", paste this as well
 
-You can remove the files ~/.local/share/font/nerd-font but keep NerdFonts
-
 This is an extended font format for extra images and icons added to nvim
 
 # Finally nvim.zip
