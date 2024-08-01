@@ -23,7 +23,7 @@ This is an extended font format for extra images and icons added to nvim
 # Finally nvim
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
-With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git/nvim\
+With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git/nvim
 
 Or alternatively only paste/ clone the extensions you plan on using within your own nvim lua folders
 
