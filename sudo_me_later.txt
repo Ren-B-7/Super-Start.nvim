@@ -1,8 +1,9 @@
 rustup component add rust-analyzer
 mkdir ~/.local/share/fonts
-cd ~/.local/share
+cd ~/.local/share/fonts
 git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts
 git sparse-checkout add patched-fonts
+bash install.sh
 cd ~/.local/share/fonts
-sudo rmdir nerd-fonts -y
+sudo rmdir nerd-fonts
