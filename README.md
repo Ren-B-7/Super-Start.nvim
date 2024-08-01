@@ -25,7 +25,7 @@ Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
 With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the nvim folder and paste in ~/.config/ and remove the directory nvim-installation-package
 
-or copy it via the vscode built into gitub
+or copy it via the vscode built into gitub at "https://github.dev/Ren-B-7/nvim-installation-package/tree/main" and download the nvim file or the ones you are interested in
 
 Or alternatively only paste/ clone the extensions you plan on using within your own nvim lua folders
 
