@@ -9,9 +9,10 @@ opt.number = true
 opt.relativenumber = true
 opt.signcolumn = "yes:1"
 
-opt.tabstop = 3
-opt.softtabstop = 3
-opt.shiftwidth = 3
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.textwidth= 80
 opt.expandtab = true
 vim.smartindent = true
 

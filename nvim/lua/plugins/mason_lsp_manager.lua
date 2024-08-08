@@ -18,7 +18,7 @@ return {
 		"java_language_server",
 		"beautysh",
 		"biome",
-		"clang-format",
+		"clang_format",
 		"stylua",
 		"black",
 		"rustfmt",

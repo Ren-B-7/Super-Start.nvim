@@ -14,15 +14,23 @@ return {
 				python = { "black" },
 				bash = { "beautysh" },
 				sh = { "beautysh" },
-				C = { "clang-format" },
-				Cpp = { "clang-format" },
-				Java = { "clang-format" },
+				c = { "clang_format" },
+				Cpp = { "clang_format" },
+				Java = { "clang_format" },
 				Rust = { "rustfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
 				timeout_ms = 500,
+			},
+			formatters = {
+				clang_format = {
+					prepend_args = {
+						"--style=file:/home/renier/.config/nvim/format-options/clang-format/.clang-format",
+						"--fallback-style=webkit",
+					},
+				},
 			},
 		})
 

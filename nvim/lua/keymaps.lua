@@ -3,8 +3,8 @@ local cmd = vim.cmd
 local del = vim.keymap.del
 
 set("n", "<leader>pv", cmd.Ex)
-set("n", "<C-q>", ":w<CR> :bd<cr> :NvimTreeFocus<cr>")
-
+set("n", "<C-q>", ":w<CR> :bd<CR> :NvimTreeFocus<CR>")
+set("n", "<C-c>", ":NvimTreeToggle <CR>")
 -- undo tree
 -- "u" - means undo
 -- <c-r> - means redo
@@ -41,11 +41,12 @@ set("n", "<leader>vd", vim.diagnostic.open_float)
 set("n", "[d", vim.diagnostic.goto_next)
 set("n", "]d", vim.diagnostic.goto_prev)
 set("n", "<leader>vca", lsp.code_action)
-set({ "n", "v", "s" }, "<leader>vrr", lsp.references)
-set({ "n", "v", "s" }, "<leader>vrn", lsp.rename)
+set({ "n", "v", "s", "i" }, "<leader>vrr", lsp.references)
+set({ "n", "v", "s", "i" }, "<leader>vrn", lsp.rename)
 
 -- file tree
-set({ "t", "c", "v", "n" }, "<leader>e", ":NvimTreeToggle<CR>", {})
-set({ "v", "n", "t" }, "<leader>h", "<C-\\><C-N><C-w>h", {})
+set("n", "<leader>e", ":NvimTreeToggle<CR>", {})
+set("n", "<leader>h", "<C-\\><C-N><C-w>h", {})
 set("n", "gt", ":bnext<CR>")
 set("n", "tg", ":bprev<CR>")
+set("n", "<leader>mm", ":setlocal modifiable<CR>")
