@@ -15,6 +15,7 @@ return {
 				bash = { "beautysh" },
 				sh = { "beautysh" },
 				c = { "clang_format" },
+				h = { "clang_format" },
 				Cpp = { "clang_format" },
 				Java = { "clang_format" },
 				Rust = { "rustfmt" },
@@ -27,9 +28,7 @@ return {
 			formatters = {
 				clang_format = {
 					prepend_args = {
-						"--style=file:" .. 
-						
-						format_root .. "/clang-format/.clang-format",
+						"--style=file:" .. format_root .. "/clang-format/.clang-format",
 						"--fallback-style=webkit",
 					},
 				},
