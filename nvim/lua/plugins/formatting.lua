@@ -4,7 +4,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
-
+		local format_root = vim.fs.normalize("~/.config/nvim/format-options/")
 		conform.setup({
 			formatters_by_ft = {
 				typescript = { "biome" },
@@ -27,7 +27,9 @@ return {
 			formatters = {
 				clang_format = {
 					prepend_args = {
-						"--style=file:/home/renier/.config/nvim/format-options/clang-format/.clang-format",
+						"--style=file:" .. 
+						
+						format_root .. "/clang-format/.clang-format",
 						"--fallback-style=webkit",
 					},
 				},
