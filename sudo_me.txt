@@ -1,7 +1,6 @@
 sudo apt update -y
 sudo apt dist-upgrade -y
-sudo apt install apt-transport-https automake autoconf curl openssh-client git gcc cpp gdb g++ cmake tmux openjdk-17-jre default-jre maven python3 python-is-python3
-python3.12-venv lua5.4 luarocks bash grep ripgrep npm diffutils zip rustup pip php ruby 
+sudo apt install apt-transport-https automake autoconf curl openssh-client git gcc cpp gdb g++ cmake tmux openjdk-17-jre default-jre maven python3 python-is-python3 clang clang-tools clangd clang-format python3.12-venv lua5.4 luarocks bash grep ripgrep npm diffutils zip rustup pip php ruby 
 sudo npm install -g neovim
 sudo luarocks install jsregexp
 sudo snap install nvim
