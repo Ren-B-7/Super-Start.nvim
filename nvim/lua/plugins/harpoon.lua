@@ -1,5 +1,6 @@
 return {
-   "ThePrimeagen/harpoon",
-   lazy = true,
-   dependencies = "nvim-lua/plenary.nvim",
+	"ThePrimeagen/harpoon",
+	lazy = true,
+	event = "VeryLazy",
+	dependencies = "nvim-lua/plenary.nvim",
 }

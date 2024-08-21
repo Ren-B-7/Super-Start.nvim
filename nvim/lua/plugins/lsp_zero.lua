@@ -1,5 +1,6 @@
 return {
 	"VonHeikemen/lsp-zero.nvim",
+	lazy = true,
 	branch = "v1.x",
 	dependencies = {
 		-- LSP support
@@ -13,7 +14,7 @@ return {
 		"hrsh7th/cmp-nvim-lua",
 		"hrsh7th/cmp-cmdline",
 		"FelipeLema/cmp-async-path",
-		--'fefora/cmp-spell',
+		"fefora/cmp-spell",
 
 		-- Snippets
 		"L3MON4D3/LuaSnip",

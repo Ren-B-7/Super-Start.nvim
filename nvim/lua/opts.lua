@@ -12,8 +12,10 @@ opt.signcolumn = "yes:1"
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
-opt.textwidth= 80
+opt.textwidth = 80
 opt.expandtab = true
+
+opt.spell = true
 vim.smartindent = true
 
 -- Spelling settings

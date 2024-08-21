@@ -1,6 +1,7 @@
-  -- Automatically add closing tags for HTML and JSX
+-- Automatically add closing tags for HTML and JSX
 return {
-    "windwp/nvim-ts-autotag",
-    event = "VeryLazy",
-    opts = {},
-  }
+	"windwp/nvim-ts-autotag",
+	event = "VeryLazy",
+	lazy = true,
+	opts = {},
+}
