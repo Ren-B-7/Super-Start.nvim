@@ -5,6 +5,7 @@ local del = vim.keymap.del
 set("n", "<leader>pv", cmd.Ex)
 set("n", "<C-q>", ":w<CR> :bd<CR> :NvimTreeFocus<CR>")
 set("n", "<C-c>", ":NvimTreeToggle <CR>")
+set("n", "<C-s>", ":w <CR>")
 -- undo tree
 -- "u" - means undo
 -- <c-r> - means redo
