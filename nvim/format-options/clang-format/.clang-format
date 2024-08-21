@@ -203,7 +203,7 @@ BreakConstructorInitializersBeforeComma: false
 # ColumnLimit (unsigned)
 # The column limit.
 # A column limit of 0 means that there is no column limit. In this case, clang-format will respect the input’s line breaking decisions within statements unless they contradict other rules.
-ColumnLimit: 80
+ColumnLimit: 79
 
 # CommentPragmas (std::string)
 # A regular expression that describes comments with special meaning, which should not be split into lines or otherwise changed.
@@ -320,7 +320,7 @@ PenaltyBreakBeforeFirstCallParameter: 80
 
 # PenaltyBreakComment (unsigned)
 # The penalty for each line break introduced inside a comment.
-PenaltyBreakComment: 80
+PenaltyBreakComment: 79
 
 # PenaltyBreakFirstLessLess (unsigned)
 # The penalty for breaking before the first <<.
@@ -328,7 +328,7 @@ PenaltyBreakFirstLessLess: 0
 
 # PenaltyBreakString (unsigned)
 # The penalty for each line break introduced inside a string literal.
-PenaltyBreakString: 80
+PenaltyBreakString: 79
 
 # PenaltyExcessCharacter (unsigned)
 # The penalty for each character outside of the column limit.
