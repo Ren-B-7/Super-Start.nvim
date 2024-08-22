@@ -13,7 +13,6 @@ local function cmd()
 
 	cmp.setup.cmdline(cmd_line_options, cmd_line_commands)
 end
-
 local function global()
 	local auto_pairs = require("nvim-autopairs.completion.cmp")
 	cmp.event:on("confirm_done", auto_pairs.on_confirm_done())
@@ -42,17 +41,20 @@ local function global()
 		window = {
 			completion = {
 				scrollbar = true,
-				zindex = 1,
-				winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+				winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
 				col_offset = -3,
 				side_padding = 0,
 			},
-			documentation = { zindex = 2, winhighlight = "Normal:CmpDoc" },
+			documentation = { winhighlight = "Normal:CmpDoc,FloatBorder:NormalFloat" },
 		},
-		view = { entries = { name = "custom" }, docs = { auto_open = true } },
+		view = {
+			entries = { name = "custom", selection_order = "near_cursor", follow_cursor = false },
+			docs = { auto_open = true },
+		},
 		formatting = {
 			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
+				print("DO we enter")
 				local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, preset = "default" })(
 					entry,
 					vim_item
@@ -65,12 +67,8 @@ local function global()
 			end,
 		},
 		mapping = {
-			["<leader>Right"] = cmp.mapping(function()
-				cmp.open_docs()
-			end),
-			["<leader>Left"] = cmp.mapping(function()
-				cmp.close_docs()
-			end),
+			["<leader>Right"] = cmp.mapping.open_docs(),
+			["<leader>Left"] = cmp.mapping.close_docs(),
 			["<C-b>"] = cmp.mapping.scroll_docs(-4),
 			["<C-f>"] = cmp.mapping.scroll_docs(4),
 			["<C-Space>"] = cmp.mapping.complete(),
@@ -105,7 +103,6 @@ local function setup()
 end
 return {
 	"hrsh7th/nvim-cmp",
-	lazy = true,
 	event = { "InsertEnter", "CmdlineEnter" },
 	dependencies = {
 		"L3MON4D3/LuaSnip",
