@@ -4,9 +4,10 @@ local function cmd()
 	local cmd_line_commands = {
 		mapping = cmp.mapping.preset.cmdline(),
 		sources = cmp.config.sources({
-			{ name = "cmdline", max_item_count = 5 },
-			{ name = "buffer", max_item_count = 5 },
-			{ name = "async_path", max_item_count = 5 },
+			{ name = "cmdline", max_item_count = 5, group_index = 1 },
+			{ name = "async_path", max_item_count = 5, group_index = 1 },
+			{ name = "buffer", max_item_count = 5, group_index = 2 },
+			{ name = "spell", max_item_count = 5, group_index = 3 },
 		}),
 	}
 
@@ -36,7 +37,7 @@ local function global()
 				require("luasnip").lsp_expand(args.body) -- For `luasnip` user.
 			end,
 		},
-		completion = { completeopt = "meno, menuone, noselect" },
+		completion = { completeopt = "menu, menuone, noselect" },
 		preselect = cmp.PreselectMode.None,
 		window = {
 			completion = {
@@ -64,10 +65,10 @@ local function global()
 			end,
 		},
 		mapping = {
-			["<C-Right"] = cmp.mapping(function()
+			["<leader>Right"] = cmp.mapping(function()
 				cmp.open_docs()
 			end),
-			["<C-Left>"] = cmp.mapping(function()
+			["<leader>Left"] = cmp.mapping(function()
 				cmp.close_docs()
 			end),
 			["<C-b>"] = cmp.mapping.scroll_docs(-4),

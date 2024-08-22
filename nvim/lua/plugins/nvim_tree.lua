@@ -2,7 +2,7 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	version = "*",
 	lazy = false,
-	priority = 1000,
+	priority = 900,
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 		"antosha417/nvim-lsp-file-operations",
@@ -16,7 +16,6 @@ return {
 				view = {
 					side = "left",
 					width = 40,
-					--relativenumber = true,
 					number = true,
 					signcolumn = "no",
 				},
