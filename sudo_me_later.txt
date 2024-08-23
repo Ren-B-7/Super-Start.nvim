@@ -1,3 +1,4 @@
+rustup default stable
 rustup component add rust-analyzer
 mkdir ~/.local/share/fonts
 cd ~/.local/share/fonts
