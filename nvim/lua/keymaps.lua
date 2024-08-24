@@ -48,7 +48,6 @@ set("n", "<leader>e", ":NvimTreeToggle<CR>", {})
 set("n", "<leader>h", "<C-\\><C-N><C-w>h", {})
 set("n", "gt", ":bnext<CR>")
 set("n", "tg", ":bprev<CR>")
-del({ "n", "v", "t" }, "gT")
 
 set("n", "<leader>mm", function()
 	require("utils.functions").toggle_modifiable()
