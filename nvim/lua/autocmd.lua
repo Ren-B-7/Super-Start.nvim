@@ -7,7 +7,7 @@ nvim_create("TextYankPost", {
 })
 nvim_create("VimEnter", {
 	callback = function()
-		require("utils.functions").reload_nvim_tree()
+		require("utils.functions").reload_nvim_tree(require("utils.functions").OFF)
 	end,
 	desc = "reload line numbers",
 })

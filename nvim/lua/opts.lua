@@ -34,8 +34,6 @@ opt.undofile = true
 opt.modifiable = true
 -- Comment this line
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
--- And uncomment this one in case you use Windows
--- opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
 
 opt.scrolloff = 8
 opt.columns = 80
