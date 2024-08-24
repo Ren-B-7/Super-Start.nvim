@@ -67,8 +67,8 @@ local function global()
 			end,
 		},
 		mapping = {
-			["<leader>Right"] = cmp.mapping.open_docs(),
-			["<leader>Left"] = cmp.mapping.close_docs(),
+			["<leader>do"] = cmp.mapping.open_docs(),
+			["<leader>dc"] = cmp.mapping.close_docs(),
 			["<C-b>"] = cmp.mapping.scroll_docs(-4),
 			["<C-f>"] = cmp.mapping.scroll_docs(4),
 			["<C-Space>"] = cmp.mapping.complete(),

@@ -2,9 +2,7 @@ local set = vim.keymap.set
 local cmd = vim.cmd
 local del = vim.keymap.del
 
-set("n", "<leader>pv", cmd.Ex)
 set("n", "<C-q>", ":w<CR> :bd<CR> :NvimTreeFocus<CR>")
-set("n", "<C-c>", ":NvimTreeToggle <CR>")
 set("n", "<C-s>", ":w <CR>")
 -- undo tree
 -- "u" - means undo
@@ -42,12 +40,20 @@ set("n", "<leader>vd", vim.diagnostic.open_float)
 set("n", "[d", vim.diagnostic.goto_next)
 set("n", "]d", vim.diagnostic.goto_prev)
 set("n", "<leader>vca", lsp.code_action)
-set({ "n", "v", "s", "i" }, "<leader>vrr", lsp.references)
-set({ "n", "v", "s", "i" }, "<leader>vrn", lsp.rename)
+set({ "n", "v" }, "<leader>vrr", lsp.references)
+set({ "n", "v" }, "<leader>vrn", lsp.rename)
 
 -- file tree
 set("n", "<leader>e", ":NvimTreeToggle<CR>", {})
 set("n", "<leader>h", "<C-\\><C-N><C-w>h", {})
 set("n", "gt", ":bnext<CR>")
 set("n", "tg", ":bprev<CR>")
-set("n", "<leader>mm", ":setlocal modifiable<CR>")
+del({ "n", "v", "t" }, "gT")
+
+set("n", "<leader>mm", function()
+	require("utils.functions").toggle_modifiable()
+end, { desc = "Toggles modifiable setting" })
+
+set("n", "<leader>tt", function()
+	require("utils.functions").toggle_list_and_col()
+end, { desc = "Toggles space and tab view, with line length" })

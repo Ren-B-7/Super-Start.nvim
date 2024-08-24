@@ -15,11 +15,12 @@ opt.shiftwidth = 4
 opt.textwidth = 80
 opt.expandtab = true
 
-opt.spell = true
+opt.listchars = "eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣"
+
 vim.smartindent = true
 
 -- Spelling settings
--- opt.spell = true
+opt.spell = true
 opt.spelllang = { "en" }
 
 opt.wrap = false
