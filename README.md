@@ -42,4 +42,4 @@ With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git
 Or alternatively only download the wanted folders via github itself and paste within the ~/.config/nvim directory.
 
 # Done?
-Then run nvim in your terminal, and all should be well, if not contact owner, cause you fucked up
+Then run nvim in your terminal, and all should be well, if not contact owner open a discussion and you will be responded as soon as possible.
