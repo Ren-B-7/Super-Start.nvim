@@ -24,7 +24,7 @@ This is an extended font format for extra images and icons added to nvim
 
 ## Recommended
 
-Head to branch-main and set tag to the latest version and donwload the .zip and paste the extracted nvim folder in ~/.config/
+Head to tags and set tag to the latest version and donwload the .zip and paste the extracted nvim folder in ~/.config/
 
 ## Other methods
 
