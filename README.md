@@ -35,7 +35,7 @@ Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
 ### #2
 
-With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
+With command "cd ~/.config" enter the .config directiry, now run "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
 
 ### #3
 
