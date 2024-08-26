@@ -54,7 +54,6 @@ local function global()
 		formatting = {
 			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
-				print("DO we enter")
 				local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, preset = "default" })(
 					entry,
 					vim_item

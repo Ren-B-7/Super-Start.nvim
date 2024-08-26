@@ -16,7 +16,9 @@ utils.ERROR = log.levels.error
 utils.OFF = 0
 
 utils.notify = function(message, log)
-	local out = log ~= utils.OFF and vim.notify(message, log) or nil
+	if log ~= utils.OFF then
+		vim.notify(message, log)
+	end
 end
 
 utils.toggle_list_and_col = function(log)
