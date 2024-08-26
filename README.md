@@ -28,11 +28,18 @@ Head to branch-main and set tag to the latest version and donwload the .zip and 
 
 ## Other methods
 
+### 1
+Head to "https://github.dev/Ren-B-7/nvim-installation-package" and download via the VsCode browser editor.
+
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
-With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the nvim folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package
+### 2
 
-Or alternatively only paste/ clone the extensions you plan on using within your own nvim lua folders
+With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
+
+### 3
+
+Or alternatively only download the wanted folders via github itself and paste within the ~/.config/nvim directory.
 
 # Done?
 Then run nvim in your terminal, and all should be well, if not contact owner, cause you fucked up
