@@ -20,24 +20,24 @@ Secondly do the same for "sudo_me_later.txt", paste this as well
 
 This is an extended font format for extra images and icons added to nvim
 
-# Finally nvim
+# Finally nvim-lua packages
 
 ## Recommended
 
-Head to branch-main and set tag to the latest version and donwload the .zip and paste the nvim folder in ~/.config/
+Head to branch-main and set tag to the latest version and donwload the .zip and paste the extracted nvim folder in ~/.config/
 
 ## Other methods
 
-### 1
+### #1
 Head to "https://github.dev/Ren-B-7/nvim-installation-package" and download via the VsCode browser editor.
 
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
-### 2
+### #2
 
 With command "git clone https://github.com/Ren-B-7/nvim-installation-package.git" then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
 
-### 3
+### #3
 
 Or alternatively only download the wanted folders via github itself and paste within the ~/.config/nvim directory.
 
