@@ -7,4 +7,4 @@ cd nerd-fonts
 git sparse-checkout add patched-fonts
 bash install.sh
 cd ~/.local/share/fonts
-sudo rmdir nerd-fonts
+sudo rm -rf nerd-fonts
