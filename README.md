@@ -9,6 +9,10 @@ go to start menu > Software & Updates > tick everything under Ubuntu Software to
 Set updates to what ever, it is your pc
 
 # Text file 1 (sudo_me)
+
+### Note
+Neovim does get installed via Snap, if it is installed via apt, you will have to remove it.
+###
 Now copy the contents of "sudo_me.txt", paste this into the ubuntu terminal
 
 You will likely have to press "y" a lot
