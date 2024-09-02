@@ -5,11 +5,10 @@ return {
 		main = "ibl",
 		opts = {},
 		dependecies = "nvim-treesitter/nvim-treesitter",
-		event = "VeryLazy",
 	},
 	{ "tiagovla/scope.nvim", dependecies = { "nvim-telescope/telescope.nvim" } },
 	{ "nvim-tree/nvim-web-devicons", event = "VeryLazy" },
-	{ "lewis6991/gitsigns.nvim" },
+	{ "lewis6991/gitsigns.nvim", event = "VeryLazy" },
 	{ "windwp/nvim-autopairs", event = "InsertEnter", config = true },
 	{ "nvim-lua/plenary.nvim", event = "VeryLazy" },
 }

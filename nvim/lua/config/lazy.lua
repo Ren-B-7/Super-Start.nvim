@@ -28,7 +28,7 @@ require("lazy").setup({
 	-- colorscheme that will be used when installing plugins.
 	install = { colorscheme = { "catpuccin" } },
 	-- automatically check for plugin updates
-	checker = { enabled = true },
+	checker = { enabled = false },
 	spec = {
 		-- import your plugins
 		{ import = "plugins" },

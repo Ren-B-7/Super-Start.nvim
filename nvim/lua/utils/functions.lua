@@ -1,6 +1,6 @@
 local api = vim.api
 local cmd = vim.cmd
-local log = vim.log
+local logs = vim.log
 local fn = vim.fn
 
 local set_opts = api.nvim_set_option_value
@@ -8,11 +8,11 @@ local get_opts = api.nvim_get_option_value
 
 local utils = {}
 
-utils.DEBUG = log.levels.debug
-utils.INFO = log.levels.info
-utils.TRACE = log.levels.trace
-utils.WARN = log.levels.warn
-utils.ERROR = log.levels.error
+utils.DEBUG = logs.levels.debug
+utils.INFO = logs.levels.info
+utils.TRACE = logs.levels.trace
+utils.WARN = logs.levels.warn
+utils.ERROR = logs.levels.error
 utils.OFF = 0
 
 utils.notify = function(message, log)
@@ -32,7 +32,7 @@ utils.toggle_colorcol = function(log)
 	log = log or utils.INFO
 	utils.notify("Toggle colorcolumn", log)
 
-	local val = (get_opts("colorcolumn", {}) == "" and tostring(fn.wincol()) or "")
+	local val = (get_opts("colorcolumn", {}) == "" and tostring(get_opts("textwidth", {})) or "")
 	set_opts("colorcolumn", val, {})
 end
 
@@ -56,6 +56,19 @@ utils.reload_nvim_tree = function(log)
 	require("nvim-tree.api").tree.open()
 	require("nvim-tree.api").tree.reload()
 	require("nvim-tree.api").tree.focus()
+end
+
+utils.toggle_format_on_save = function(log)
+	log = log or utils.INFO
+	utils.notify("Toggle format on save", log)
+
+	if vim.g.autoformat then
+		vim.g.autoformat = false
+		cmd('echo "Format disabled"')
+	else
+		vim.g.autoformat = true
+		cmd('echo "Format enabled"')
+	end
 end
 
 return utils

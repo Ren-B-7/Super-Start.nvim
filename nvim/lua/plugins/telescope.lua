@@ -2,7 +2,6 @@ return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	cmd = "Telescope",
-	event = "VeryLazy",
 	config = function()
 		local actions = require("telescope.actions")
 		require("telescope").setup({

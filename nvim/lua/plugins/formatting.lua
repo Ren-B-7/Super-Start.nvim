@@ -20,11 +20,16 @@ return {
 				Java = { "clang_format" },
 				Rust = { "rustfmt" },
 			},
-			format_on_save = {
-				lsp_fallback = true,
-				async = false,
-				timeout_ms = 500,
-			},
+			format_on_save = function()
+				if not vim.g.autoformat then
+					return
+				end
+				return {
+					lsp_fallback = true,
+					async = false,
+					timeout_ms = 500,
+				}
+			end,
 			formatters = {
 				clang_format = {
 					prepend_args = {

@@ -15,7 +15,7 @@ opt.shiftwidth = 4
 opt.textwidth = 80
 opt.expandtab = true
 
-opt.listchars = "eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣"
+opt.listchars = {eol = "¬",tab = ">>",trail = "·",space = "␣"}
 
 vim.smartindent = true
 
@@ -27,6 +27,7 @@ opt.wrap = false
 
 opt.hlsearch = false
 opt.incsearch = true
+opt.inccommand = 'split'
 
 opt.swapfile = false
 opt.backup = false
@@ -35,7 +36,7 @@ opt.modifiable = true
 -- Comment this line
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-opt.scrolloff = 8
+opt.scrolloff = 5
 opt.columns = 80
 opt.updatetime = 100
 
@@ -45,4 +46,5 @@ opt.sessionoptions = { -- required
 	"buffers",
 	"tabpages",
 	"globals",
+	"resize",
 }
