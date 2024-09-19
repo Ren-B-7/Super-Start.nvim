@@ -4,6 +4,7 @@ return {
 	cmd = "Telescope",
 	config = function()
 		local actions = require("telescope.actions")
+
 		require("telescope").setup({
 			defaults = {
 				mappings = {
@@ -26,5 +27,6 @@ return {
 			},
 			pickers = { buffers = { show_all_buffers = true } },
 		})
+		require("telescope").load_extension("refactoring")
 	end,
 }
