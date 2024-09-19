@@ -62,12 +62,12 @@ utils.toggle_format_on_save = function(log)
 	log = log or utils.INFO
 	utils.notify("Toggle format on save", log)
 
-	if vim.g.autoformat then
-		vim.g.autoformat = false
-		cmd('echo "Format disabled"')
-	else
-		vim.g.autoformat = true
+	if vim.g.autoformat == 0 then
+		vim.g.autoformat = 1
 		cmd('echo "Format enabled"')
+	else
+		vim.g.autoformat = 0
+		cmd('echo "Format disabled"')
 	end
 end
 

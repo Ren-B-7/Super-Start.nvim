@@ -3,6 +3,7 @@ local m = {}
 
 m.start = function()
 	m.close_all_buffers_command()
+	m.toggle_auto_format()
 end
 
 m.close_all_buffers_command = function()
@@ -10,9 +11,7 @@ m.close_all_buffers_command = function()
 end
 
 m.toggle_auto_format = function()
-	vim.api.nvim_create_user_command("TF", function()
-		require("utils.functions").toggle_format_on_save()
-	end, {})
+	cmd(":command TF :lua require('utils.functions').toggle_format_on_save()")
 end
 
 return m

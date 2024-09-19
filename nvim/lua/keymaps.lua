@@ -57,6 +57,6 @@ set("n", "<leader>tt", function()
 	require("utils.functions").toggle_list_and_col()
 end, { desc = "Toggles space and tab view, with line length" })
 
-set("n", "<C-L>", function()
+set("n", "<C-F>", function()
 	require("utils.functions").toggle_format_on_save()
 end, { desc = "Toggle format on save" })

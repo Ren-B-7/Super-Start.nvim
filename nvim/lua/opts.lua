@@ -4,6 +4,7 @@ local opt = vim.opt
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 g.mapleader = " "
+g.autoformat = 1
 
 opt.number = true
 opt.relativenumber = true
@@ -15,7 +16,7 @@ opt.shiftwidth = 4
 opt.textwidth = 80
 opt.expandtab = true
 
-opt.listchars = {eol = "¬",tab = ">>",trail = "·",space = "␣"}
+opt.listchars = { eol = "¬", tab = ">>", trail = "·", space = "␣" }
 
 vim.smartindent = true
 
@@ -27,7 +28,7 @@ opt.wrap = false
 
 opt.hlsearch = false
 opt.incsearch = true
-opt.inccommand = 'split'
+opt.inccommand = "split"
 
 opt.swapfile = false
 opt.backup = false

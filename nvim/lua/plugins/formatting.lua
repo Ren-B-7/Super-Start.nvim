@@ -21,7 +21,7 @@ return {
 				Rust = { "rustfmt" },
 			},
 			format_on_save = function()
-				if not vim.g.autoformat then
+				if vim.g.autoformat == 0 then
 					return
 				end
 				return {
