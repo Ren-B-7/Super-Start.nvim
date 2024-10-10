@@ -6,5 +6,5 @@ git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts.gi
 cd nerd-fonts
 git sparse-checkout add patched-fonts
 bash install.sh
-cd ~/.local/share/fonts
+cd ..
 sudo rm -rf nerd-fonts
