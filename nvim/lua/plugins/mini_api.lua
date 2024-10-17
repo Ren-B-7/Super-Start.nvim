@@ -1,7 +1,8 @@
 return {
-	"echasnovski/mini.nvim",
-	version = false,
-	init = function()
-		require("mini.comment").setup()
-	end,
+    "echasnovski/mini.nvim",
+    version = false,
+    event = "VeryLazy",
+    init = function()
+        require("mini.comment").setup()
+    end,
 }

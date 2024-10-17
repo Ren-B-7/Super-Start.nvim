@@ -16,6 +16,7 @@ utils.ERROR = logs.levels.error
 utils.OFF = 0
 
 utils.notify = function(message, log)
+	log = log or utils.INFO
 	if log ~= utils.OFF then
 		vim.notify(message, log)
 	end

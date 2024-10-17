@@ -7,23 +7,7 @@ return {
 		"VonHeikemen/lsp-zero.nvim",
 		"neovim/nvim-lspconfig",
 	},
-	servers = {
-		"clangd",
-		"pylyzer",
-		"dprint",
-		"luacheck",
-		"rust_analyzer",
-		"lua_ls",
-		"cpplint",
-		"pylint",
-		"java_language_server",
-		"beautysh",
-		"biome",
-		"clang_format",
-		"stylua",
-		"black",
-		"rustfmt",
-	},
+    servers = require("utils.easy_lsp").get_all_server_names(),
 	config = function()
 		local lsp = require("lsp-zero")
 		lsp.preset("recommended")
@@ -45,14 +29,6 @@ return {
 		})
 
 		require("mason-lspconfig").setup({
-			ensure_installed = {
-				"clangd",
-				"pylyzer",
-				"dprint",
-				"lua_ls",
-				"rust_analyzer",
-				"java_language_server",
-			},
 			automatic_installation = true,
 		})
 		vim.diagnostic.config({

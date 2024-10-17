@@ -13,5 +13,4 @@ end
 m.toggle_auto_format = function()
 	cmd(":command TF :lua require('utils.functions').toggle_format_on_save()")
 end
-
 return m

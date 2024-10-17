@@ -7,7 +7,7 @@ set("n", "<C-s>", ":w <CR>")
 -- undo tree
 -- "u" - means undo
 -- <c-r> - means redo
-set("n", "<leader>u", cmd.UndotreeToggle)
+set("n", "<leader>u", "<cmd>Telescope undo<cr>")
 
 -- telescope keymaps
 local builtin = require("telescope.builtin")
@@ -15,7 +15,7 @@ local builtin = require("telescope.builtin")
 set("n", "<leader>pf", builtin.find_files, {})
 set("n", "<leader>pg", builtin.git_files, {})
 set("n", "<leader>ps", function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+    builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 
 -- harpoon keymaps
@@ -27,10 +27,10 @@ set("n", "<leader>a", mark.add_file, {})
 set("n", "<leader>j", ui.nav_next, {})
 set("n", "<leader>k", ui.nav_prev, {})
 set("n", "<C-t>", function()
-	term.gotoTerminal(1)
+    term.gotoTerminal(1)
 end)
 
--- lsp keymaps
+-- lsp keymaps"<cmd>Telescope undo<cr>"
 local lsp = vim.lsp.buf
 
 set("n", "gd", lsp.definition)
@@ -44,23 +44,25 @@ set({ "n", "v" }, "<leader>vrr", lsp.references)
 set({ "n", "v" }, "<leader>vrn", lsp.rename)
 
 -- file tree
-set("n", "<leader>e", ":NvimTreeToggle<CR>", {})
-set("n", "<leader>h", "<C-\\><C-N><C-w>h", {})
+set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle tree view" })
+set("n", "<leader>h", "<C-\\><C-N><C-w>h", { desc = "Set focus on nvim tree" })
+
+-- navigation
 set("n", "gt", ":bnext<CR>")
 set("n", "tg", ":bprev<CR>")
 
 set("n", "<leader>mm", function()
-	require("utils.functions").toggle_modifiable()
+    require("utils.functions").toggle_modifiable()
 end, { desc = "Toggles modifiable setting" })
 
 set("n", "<leader>tt", function()
-	require("utils.functions").toggle_list_and_col()
+    require("utils.functions").toggle_list_and_col()
 end, { desc = "Toggles space and tab view, with line length" })
 
-set("n", "<C-F>", function()
-	require("utils.functions").toggle_format_on_save()
+set("n", "<C-H>", function()
+    require("utils.functions").toggle_format_on_save()
 end, { desc = "Toggle format on save" })
 
 set({ "n", "x" }, "<leader>rr", function()
-	require("telescope").extensions.refactoring.refactors()
+    require("telescope").extensions.refactoring.refactors()
 end, { desc = "Refractor selected text" })
