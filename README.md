@@ -84,7 +84,7 @@ to your ~/.zshrc file
 -- .zshrc file setup  
 Add the wanted plugins and themes from [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) using this [documentation](https://github.com/zsh-users/antigen)
 
+##
 REMEMBER TO RELAUNCH AND RUN ```source ~/.zshrc``` after all installations and updates
-
-###
+##
 My personal .zshrc file is given as an example, i dont recommend mine since i have many other installs as well
