@@ -68,9 +68,11 @@ Sudo apt install zsh
 Then install Antigen for plugin use
 
 -- Antigen install
+
 "curl -L git.io/antigen > antigen.zsh"
 
 -- PowerLevel10K install
+
 Clone the repository
 "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 
@@ -78,4 +80,5 @@ Add "ZSH_THEME='powerlevel10k/powerlevel10k'" to your ~/.zshrc file
 Add the "antigen theme romkatv/powerlevel10k" to the .zshrc file
 
 -- .zshrc file setup
+
 Add the wanted plugins and themes from here (https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) using this documentation (https://github.com/zsh-users/antigen)
