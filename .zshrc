@@ -65,6 +65,17 @@ export PATH="$CARGOINSTALLPATH:$PATH"
 alias tvim='vim.tiny'
 eval "$(rbenv init -)"
 
+# GVM init
+[[ -s "/home/renier/.gvm/scripts/gvm" ]] && source "/home/renier/.gvm/scripts/gvm"
+
+# NVM init
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_update="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash"
+export SUDO_ASKPASS=/usr/bin/gnome-ssh-askpass
+
 # >>> juliaup initialize >>>
 # !! Contents within this block are managed by juliaup !!
 
