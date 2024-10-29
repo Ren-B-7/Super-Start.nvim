@@ -14,27 +14,27 @@ antigen theme romkatv/powerlevel10k
 antigen use oh-my-zsh
 
 #package manager/ env support
-# antigen bundle git
-# antigen bundle rvm
-# antigen bundle pyenv
-# antigen bundle nvm
-# antigen bundle npm
-# antigen bundle pip
-# antigen bundle gem
+antigen bundle git
+antigen bundle rvm
+antigen bundle pyenv
+antigen bundle nvm
+antigen bundle npm
+antigen bundle pip
+antigen bundle gem
 
 # #language support
-# antigen bundle perl
-# antigen bundle ruby
-# antigen bundle python
+antigen bundle perl
+antigen bundle ruby
+antigen bundle python
 
 # #os support
-# antigen bundle ubuntu
+antigen bundle ubuntu
 
-# antigen bundle zoxide
-# antigen bundle history
+antigen bundle zoxide
+antigen bundle history
 
-# antigen bundle asdf
-# antigen bundle cpanm
+antigen bundle asdf
+antigen bundle cpanm
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -58,6 +58,13 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 # Start of .bashrc
+
+export CARGOINSTALLPATH="$HOME/.cargo/bin"
+export PATH="$CARGOINSTALLPATH:$PATH"
+
+set -o vi
+alias tvim='vim.tiny'
+eval "$(rbenv init -)"
 
 # >>> juliaup initialize >>>
 # !! Contents within this block are managed by juliaup !!
