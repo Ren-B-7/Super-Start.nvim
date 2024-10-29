@@ -1,7 +1,6 @@
 local api = vim.api
 local cmd = vim.cmd
 local logs = vim.log
-local fn = vim.fn
 
 local set_opts = api.nvim_set_option_value
 local get_opts = api.nvim_get_option_value
@@ -47,7 +46,8 @@ utils.toggle_modifiable = function(log)
 	log = log or utils.INFO
 	utils.notify("Toggle modifiable", log)
 
-	cmd("setlocal modifiable!")
+	vim.bo.modifiable = not vim.bo.modifiable
+	cmd('echo "modifiable ' .. (vim.bo.modifiable and "true" or "false") .. '"')
 end
 
 utils.reload_nvim_tree = function(log)
@@ -63,13 +63,8 @@ utils.toggle_format_on_save = function(log)
 	log = log or utils.INFO
 	utils.notify("Toggle format on save", log)
 
-	if vim.g.autoformat == 0 then
-		vim.g.autoformat = 1
-		cmd('echo "Format enabled"')
-	else
-		vim.g.autoformat = 0
-		cmd('echo "Format disabled"')
-	end
+	vim.g.autoformat = not vim.g.autoformat
+	cmd('echo "Autoformat ' .. (vim.g.autoformat and "true" or "false") .. '"')
 end
 
 return utils

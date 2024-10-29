@@ -40,6 +40,11 @@ table.insert(
 	dependencies,
 	{ cmd = "fdfind", name = "fd-find", install_method = string.format("sudo apt install %s", "fd-find") }
 )
+-- rust and cargo
+table.insert(
+	dependencies,
+	{ cmd = "cargo", name = "rustup", install_method = string.format("sudo apt install %s", "rustup") }
+)
 
 local attempt_cmd = function(opts)
 	if vim.fn.executable(opts.cmd) then

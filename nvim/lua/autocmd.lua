@@ -5,9 +5,19 @@ nvim_create("TextYankPost", {
 	end,
 	desc = "highlights yank",
 })
-nvim_create("VimEnter", {
-	callback = function()
-		require("utils.functions").reload_nvim_tree(require("utils.functions").OFF)
-	end,
-	desc = "reload line numbers",
-})
+-- nvim_create("WinEnter", {
+--	callback = function()
+--		require("utils.functions").reload_nvim_tree(require("utils.functions").OFF)
+--	end,
+--	desc = "reload line numbers",
+--})
+-- nvim_create({ "WinEnter" }, {
+-- 	callback = function()
+-- 		-- require("transparent").toggle(vim.g.transparent_enabled)
+-- 		-- vim.cmd(":silent exec '!kill -s SIGWINCH $PPID'")
+-- 		-- local pid, WINCH = vim.fn.getpid(), vim.loop.constants.SIGWINCH
+-- 		-- vim.defer_fn(function()
+-- 		-- 	vim.loop.kill(pid, WINCH)
+-- 		-- end, 20)
+-- 	end,
+-- })
