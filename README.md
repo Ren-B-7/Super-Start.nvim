@@ -35,14 +35,14 @@ Head to tags and set tag to the latest version and donwload the .zip and paste t
 ### #1
 Head to ```https://github.dev/Ren-B-7/Super-Start.nvim``` and download via the VsCode browser editor.
 
-Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
+Then finally go to ```~/.config/``` and paste the "nvim" folder here
 
 ### #2
 
-With command "cd ~/.config" enter the .config directiry, now run ```git clone --branch tag-name --single-branch https://github.com/Ren-B-7/nvim-installation-package.git``` then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
+With command ```cd ~/.config``` enter the .config directiry, now run ```git clone --branch tag-name --single-branch https://github.com/Ren-B-7/nvim-installation-package.git``` then copy the "nvim" folder and paste in ```~/.config/``` and remove the directory ```~/.config/nvim-installation-package```.
 
 ### #3
-Or alternatively only download the wanted folders via github itself and paste within the ~/.config/nvim directory.
+Or alternatively only download the wanted folders via github itself and paste within the ```~/.config/nvim directory```.
 
 # Done?
 Then run nvim in your terminal, and all should be well, if not contact owner or open a discussion and you will be responded as soon as possible.
@@ -56,8 +56,8 @@ WezTerm is a replacement for tmux, it provides easy of use and better rounding, 
 ### Installation
 ```Sudo apt install wezterm```
 
-And drop the .wezterm.lua file at root (~/.wezterm.lua) for config  
-Just add your own font from the Nerd font directory (~/.local/share/fonts/NerdFonts)
+And drop the .wezterm.lua file at root ```~/.wezterm.lua``` for config  
+Just add your own font from the Nerd font directory ```~/.local/share/fonts/NerdFonts```
 
 ## ZSH
 Zsh is a replacement for bash, it provides better/ easier language support and is easier to use and read
