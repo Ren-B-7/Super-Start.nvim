@@ -33,13 +33,13 @@ Head to tags and set tag to the latest version and donwload the .zip and paste t
 ## Other methods
 
 ### #1
-Head to '''https://github.dev/Ren-B-7/Super-start.nvim''' and download via the VsCode browser editor.
+Head to ```https://github.dev/Ren-B-7/Super-start.nvim``` and download via the VsCode browser editor.
 
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
 ### #2
 
-With command "cd ~/.config" enter the .config directiry, now run '''git clone --branch tag-name --single-branch https://github.com/Ren-B-7/nvim-installation-package.git''' then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
+With command "cd ~/.config" enter the .config directiry, now run ```git clone --branch tag-name --single-branch https://github.com/Ren-B-7/nvim-installation-package.git``` then copy the "nvim" folder and paste in ~/.config/ and remove the directory ~/.config/nvim-installation-package.
 
 ### #3
 Or alternatively only download the wanted folders via github itself and paste within the ~/.config/nvim directory.
@@ -54,7 +54,7 @@ I recommend using WezTerm with ZSH, it provides easy use with the normal termina
 WezTerm is a replacement for tmux, it provides easy of use and better rounding, with easier/ better customization
 
 ### Installation
-'''Sudo apt install wezterm'''
+```Sudo apt install wezterm```
 
 And drop the .wezterm.lua file at root (~/.wezterm.lua) for config  
 Just add your own font from the Nerd font directory (~/.local/share/fonts/NerdFonts)
@@ -63,20 +63,20 @@ Just add your own font from the Nerd font directory (~/.local/share/fonts/NerdFo
 Zsh is a replacement for bash, it provides better/ easier language support and is easier to use and read
 
 ### Installation
-'''Sudo apt install zsh'''
+```Sudo apt install zsh```
 
 Then install Antigen for plugin use  
 
 -- Antigen install  
-'''curl -L git.io/antigen > antigen.zsh'''
+```curl -L git.io/antigen > antigen.zsh```
 
 -- PowerLevel10K install  
 Clone the repository  
-'''git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k'''
+```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
 
 Add  
-'''ZSH_THEME="powerlevel10k/powerlevel10k"  
-antigen theme romkatv/powerlevel10k''' to your ~/.zshrc file
+```ZSH_THEME="powerlevel10k/powerlevel10k"  
+antigen theme romkatv/powerlevel10k``` to your ~/.zshrc file
 
 -- .zshrc file setup  
 Add the wanted plugins and themes from [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) using this [documentation](https://github.com/zsh-users/antigen)
