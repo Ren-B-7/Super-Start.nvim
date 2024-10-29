@@ -33,7 +33,7 @@ Head to tags and set tag to the latest version and donwload the .zip and paste t
 ## Other methods
 
 ### #1
-Head to ```https://github.dev/Ren-B-7/Super-start.nvim``` and download via the VsCode browser editor.
+Head to ```https://github.dev/Ren-B-7/Super-Start.nvim``` and download via the VsCode browser editor.
 
 Then finally go to ~/.config/ ("cd ~/.config/") and paste the "nvim" folder here
 
