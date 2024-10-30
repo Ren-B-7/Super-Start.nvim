@@ -62,7 +62,6 @@ alias cd="z"
 export CARGOINSTALLPATH="$HOME/.cargo/bin"
 export PATH="$CARGOINSTALLPATH:$PATH"
 
-alias tvim='vim.tiny'
 eval "$(rbenv init -)"
 
 # GVM init
