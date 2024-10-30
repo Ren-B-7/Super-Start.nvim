@@ -14,27 +14,27 @@ antigen theme romkatv/powerlevel10k
 antigen use oh-my-zsh
 
 #package manager/ env support
-antigen bundle git
-antigen bundle rvm
-antigen bundle pyenv
-antigen bundle nvm
-antigen bundle npm
-antigen bundle pip
-antigen bundle gem
+#antigen bundle git
+#antigen bundle rvm
+#antigen bundle pyenv
+#antigen bundle nvm
+#antigen bundle npm
+#antigen bundle pip
+#antigen bundle gem
 
 # #language support
-antigen bundle perl
-antigen bundle ruby
-antigen bundle python
+#antigen bundle perl
+#antigen bundle ruby
+#antigen bundle python
 
 # #os support
-antigen bundle ubuntu
+#antigen bundle ubuntu
 
-antigen bundle zoxide
-antigen bundle history
+#antigen bundle zoxide
+#antigen bundle history
 
-antigen bundle asdf
-antigen bundle cpanm
+#antigen bundle asdf
+#antigen bundle cpanm
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -91,6 +91,25 @@ export SDKMAN_DIR="$HOME/.sdkman"
 #Exit bashrc
 
 setopt COMBINING_CHARS
+
+alias vim="NVIM_APPNAME=no-config.nvim nvim"
+
+
+function nvims() {
+  items=("default" "no-config.nvim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "simplexity" ]]; then
+    config=""
+  fi
+
+  NVIM_APPNAME=$config nvim"$@"
+}
+
+bindkey -s ^a "nvims\n"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
