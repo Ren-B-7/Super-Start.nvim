@@ -84,6 +84,9 @@ to your ~/.zshrc file
 -- .zshrc file setup  
 Add the wanted plugins and themes from [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) using this [documentation](https://github.com/zsh-users/antigen)
 
+Please not there is code to handle having multiple configs at once, this is within the nvims function  
+Each entry must be the name of a different config file, defualt would be the Nvim config file, this allows for multiple diffferent configs to choose from
+
 ##
 REMEMBER TO RELAUNCH AND RUN ```source ~/.zshrc``` after all installations and updates
 ##
