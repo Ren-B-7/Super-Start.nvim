@@ -1,5 +1,3 @@
-rustup default stable
-rustup component add rust-analyzer
 mkdir ~/.local/share/fonts
 cd ~/.local/share/fonts
 git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts.git
