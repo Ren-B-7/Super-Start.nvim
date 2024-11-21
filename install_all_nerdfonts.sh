@@ -6,3 +6,6 @@ git sparse-checkout add patched-fonts
 bash install.sh
 cd ..
 sudo rm -rf nerd-fonts
+
+# Refresh the font cache
+fc-cache -fv
