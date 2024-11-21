@@ -48,46 +48,4 @@ Or alternatively only download the wanted folders via github itself and paste wi
 Then run nvim in your terminal, and all should be well, if not contact owner or open a discussion and you will be responded as soon as possible.
 
 # Terminal to use
-I recommend using WezTerm with ZSH, it provides easy use with the normal terminal commands and plugins for further use and customization.
-
-## WezTerm
-WezTerm is a replacement for tmux, it provides easy of use and better rounding, with easier/ better customization
-
-### Installation
-```Sudo apt install wezterm```
-
-And drop the .wezterm.lua file at root ```~/.wezterm.lua``` for config  
-Just add your own font from the Nerd font directory ```~/.local/share/fonts/NerdFonts```
-
-## ZSH
-Zsh is a replacement for bash, it provides better/ easier language support and is easier to use and read
-
-### Installation
-```Sudo apt install zsh```
-
-Then install Antigen for plugin use  
-
--- Antigen install  
-```curl -L git.io/antigen > antigen.zsh```
-
--- PowerLevel10K install  
-Clone the repository  
-```git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k```
-
-Add  
-```
-ZSH_THEME="powerlevel10k/powerlevel10k"
-antigen theme romkatv/powerlevel10k
-```
-to your ~/.zshrc file
-
--- .zshrc file setup  
-Add the wanted plugins and themes from [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) using this [documentation](https://github.com/zsh-users/antigen)
-
-Please not there is code to handle having multiple configs at once, this is within the nvims function  
-Each entry must be the name of a different config file, defualt would be the Nvim config file, this allows for multiple diffferent configs to choose from
-
-##
-REMEMBER TO RELAUNCH AND RUN ```source ~/.zshrc``` after all installations and updates
-##
-My personal .zshrc file is given as an example, i dont recommend mine since i have many other installs as well
+I recommend using WezTerm with ZSH, it is easy use with the normal terminal commands and plugins for further use and customization.
