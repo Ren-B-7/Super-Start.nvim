@@ -5,3 +5,4 @@ sudo npm install -g neovim
 sudo luarocks install jsregexp
 sudo snap install nvim --classic
 sudo apt upgrade -y
+rustup default stable
